@@ -4,7 +4,7 @@ p {
   h3{
     color: brown;
   }
- body{ background-image: url('slike/pozadina.jpg');
+ body{ background-image: url('pokusaj/slike/pozadina.jpg');
     background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;

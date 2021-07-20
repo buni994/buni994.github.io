@@ -1,7 +1,6 @@
 body {
-    font-family: Arial;
+   height: 100%;
     margin: 0;
-    height: 100%;
   
     /* The image used */
     background-image: url("pozadina2.gif");

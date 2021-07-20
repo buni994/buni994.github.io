@@ -1,0 +1,188 @@
+body {
+    height: 100%;
+    margin: 0;
+  
+    /* The image used */
+    background-image: url("pozadina2.gif");
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  .header {
+    background-color: hsla(207, 76%, 84%, 0.2);
+    color: rgb(0, 0, 0);
+    padding: 1px;
+    border-radius:  25px;
+    margin: 5px;
+    text-align: center;
+    position:relative;
+    left: 15%;
+    width: 70%;
+    height: 4%;
+    text-shadow: 0 0 3px #bde411, 0 0 5px #000000;
+    
+
+  }
+  img {
+    vertical-align: middle;
+  }
+  
+  /* Position the image container (needed to position the left and right arrows) */
+  .container {
+    position: relative;
+    width: 80%;
+    left: 10%;
+    height: 40%;
+    border: 5px solid #000000;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    color: black;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Container for image text */
+  .caption-container {
+  
+    text-align:center;
+    background-color: rgba(23, 157, 219, 0.8);
+    padding: 1px;
+
+    color: rgb(197, 231, 5);
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+    
+    
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 16.66%;
+
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+  #nazad{
+      position:relative;
+      width: 30%;
+      left:35%;
+      margin-top: 30px;
+
+      background-color: hsla(207, 76%, 84%, 0.5);
+    color: rgb(3, 3, 3);
+    padding: 15px;
+    border-radius:  25px;
+    text-align: center;
+    font-size: larger;
+
+  }
+  #nazad:hover{
+      background-color: hsla(207, 76%, 84%, 0.9);;
+      cursor: pointer;
+  }
+  #prava{
+  
+    color: #ffffff;
+    text-align: center;
+    font-size: 12px;
+    padding: 10px;
+    position: relative;
+    margin-top: 10%;
+  bottom: 1px;
+  left: 30%;
+  width: 40%;
+  border: 1px solid #d3dbba;
+  }
+  .video{
+    position: relative;
+    width: 80%;
+    left: 10%;
+    height: 40%;
+    border: 5px solid #000000;
+    margin-top: 20px;
+  }
+  @media only screen and (min-width: 600px)
+  {
+   
+    .header{
+      width: 30%;
+    left:35%;
+    }
+    .container{
+      width: 50%;
+      position: relative;
+      height: 50%;
+      left: 25%;
+    }
+    .video{
+      width: 50%;
+      position: relative;
+      height: 500px;
+      left: 25%;
+    }
+  }

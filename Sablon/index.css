@@ -78,12 +78,13 @@
   }
   
   .aside {
-    background-color: #33b5e5;
+    background-color: hsla(207, 76%, 84%, 0.5);
     padding: 15px;
-    color: #ffffff;
+    color: black;
     text-align: center;
     font-size: 14px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    font-family: 'Brush Script MT Bold';
     width: 50%;
   }
   

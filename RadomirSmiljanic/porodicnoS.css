@@ -1,8 +1,8 @@
 
 body, html {
   height: 100%;
+  width: 100%;
   margin: 0;
-  orientation:landscape;
 }
 
 .bg {
@@ -34,10 +34,4 @@ font-size: larger;
 #nazad1:hover{
   background-color: hsla(207, 76%, 84%, 0.9);;
   cursor: pointer;
-}
- @media screen and (max-width: 600px) {
-  .bg {
-    transform: rotate(90deg);
-    background-size: 100% 100%;
-  }
 }

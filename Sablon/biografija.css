@@ -16,7 +16,12 @@ body {
   ::-webkit-scrollbar {
     width: 20px;
   }
-  
+  ::-webkit-scrollbar-thumb {
+    background-color: #535050;
+    background-clip:padding-box;
+    border-radius: 20%;
+    border: 0.05em solid #eeeeee;
+  }
   
   
   

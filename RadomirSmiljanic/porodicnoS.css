@@ -38,5 +38,6 @@ font-size: larger;
  @media screen and (max-width: 600px) {
   .bg {
     transform: rotate(90deg);
+    background-size: 100% 100%;
   }
 }

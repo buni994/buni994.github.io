@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<style>
+#myDIV {
+  width: 100%;
+  
+  overflow: auto;
+}
+
+#content {
+  height: 1409px;
+  width: 3217px;
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #535050;
+  background-clip:padding-box;
+  border-radius: 20%;
+  border: 0.05em solid #eeeeee;
+}
+
+
+
+/* Buttons */
+::-webkit-scrollbar-button:single-button {
+  
+  display: block;
+  border-style: solid;
+  height: 13px;
+  width: 16px;
+  
+}
+/* Up */
+::-webkit-scrollbar-button:single-button:vertical:decrement {
+  border-width: 0 10px 10px 10px;
+  border-color: transparent transparent #000000 transparent;
+
+}
+
+::-webkit-scrollbar-button:single-button:vertical:decrement:hover {
+  border-color: transparent transparent #777777 transparent;
+}
+/* Down */
+::-webkit-scrollbar-button:single-button:vertical:increment {
+  border-width: 10px 10px 0 10px;
+  border-color: #000000 transparent transparent transparent;
+}
+
+::-webkit-scrollbar-button:vertical:single-button:increment:hover {
+  border-color: #777777 transparent transparent transparent;
+}
+#nazad1{
+position:fixed;
+width: 20%;
+left:70%;
+bottom: 10%;
+
+background-color: hsla(207, 76%, 84%, 0.5);
+color: rgb(3, 3, 3);
+padding:15px;
+border-radius:  25px;
+text-align: center;
+font-size: 4vw;
+
+}
+#nazad1:hover{
+background-color: hsla(207, 76%, 84%, 0.9);;
+cursor: pointer;
+}
+
+</style>
+</head>
+<body onload="myFunction()">
+
+<div class="kontejner" id="myDIV">
+ <div id="content">
+    <img src="galerija/Stablo.JPG" alt="greska">
+</div>
+<div >
+  <button type="button" id="nazad1" onclick="window.location.href='index.html'">Назад</button>
+</div>
+</div>
+
+<script>
+    $(document).ready(function(){
+      var outerContent = $('.kontejner');
+      var innerContent = $('.kontejner > div');
+    
+      outerContent.scrollLeft((innerContent.width() - outerContent.width()) / 2);        
+    });
+    </script>
+
+</body>
+</html>

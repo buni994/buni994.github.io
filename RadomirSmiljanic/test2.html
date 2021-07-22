@@ -10,8 +10,8 @@
 }
 
 #content {
-  height: 1409px;
-  width: 3217px;
+  height: 4664 px;
+  width: 1148 px;
 }
 
 ::-webkit-scrollbar {
@@ -56,7 +56,8 @@
 }
 #nazad1{
 position:fixed;
-width: 20%;
+width: 20vmax;
+height: 7vmax;
 left:70%;
 bottom: 10%;
 
@@ -65,8 +66,8 @@ color: rgb(3, 3, 3);
 padding:15px;
 border-radius:  25px;
 text-align: center;
-font-size: 4vw;
-
+font-size: 2vw;
+text-shadow: 0 0 3px #1800f1, 0 0 2px #000000;
 }
 #nazad1:hover{
 background-color: hsla(207, 76%, 84%, 0.9);;
@@ -77,23 +78,15 @@ cursor: pointer;
 </head>
 <body onload="myFunction()">
 
-<div class="kontejner" id="myDIV">
+<div class="abc" id="myDIV">
  <div id="content">
     <img src="galerija/Stablo.JPG" alt="greska">
-</div>
-<div >
-  <button type="button" id="nazad1" onclick="window.location.href='index.html'">Назад</button>
-</div>
+    <div >
+      <button type="button" id="nazad1" onclick="window.location.href='index.html'">Назад</button>
+    </div>
 </div>
 
-<script>
-    $(document).ready(function(){
-      var outerContent = $('.kontejner');
-      var innerContent = $('.kontejner > div');
-    
-      outerContent.scrollLeft((innerContent.width() - outerContent.width()) / 2);        
-    });
-    </script>
+</div>
 
 </body>
 </html>

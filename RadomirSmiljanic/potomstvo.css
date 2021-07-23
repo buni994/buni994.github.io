@@ -65,7 +65,7 @@ img {
 
   color: rgb(0, 0, 0);
   text-shadow: 0 0 3px #0400ff, 0 0 5px #0000FF;
-  word-wrap: break-word;
+  font-size: 1vmax;
   height: 20vh;
   border-radius: 2px;
   

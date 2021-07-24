@@ -1,0 +1,36 @@
+body{
+    height: 100%;
+    width: 100;
+    margin: 0;
+  
+    /* The image used */
+  
+}
+.pozadina{
+  background-image: url("galerija/stablo.JPG");
+  position: relative;
+  width: 1148px;
+
+  height: 4664px;
+  border: 5px solid #000000;
+  
+}
+#nazad1{
+  position:fixed;
+  width: 20vmax;
+  height: 7vmax;
+  left:70%;
+  bottom: 10%;
+  
+  background-color: hsla(207, 76%, 84%, 0.5);
+  color: rgb(3, 3, 3);
+  padding:15px;
+  border-radius:  25px;
+  text-align: center;
+  font-size: 2vw;
+  text-shadow: 0 0 3px #1800f1, 0 0 2px #000000;
+  }
+  #nazad1:hover{
+  background-color: hsla(207, 76%, 84%, 0.9);;
+  cursor: pointer;
+  }
